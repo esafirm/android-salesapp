@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <!--Material Edit Text-->
+  <declare-styleable name="MaterialEditText">
+    <attr format="string" name="hint"/>
+    <attr name="android:inputType"/>
+  </declare-styleable>
+  
+  
+</resources>

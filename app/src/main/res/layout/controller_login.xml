@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/view_padding_horizontal"
+    >
+
+  <ImageView
+      android:layout_width="128dp"
+      android:layout_height="128dp"
+      android:layout_gravity="center"
+      android:layout_margin="@dimen/view_padding_big"
+      android:src="@mipmap/ic_launcher"
+      />
+
+  <com.arx.android.salesapp.views.MaterialEditText
+      android:id="@+id/loginInpUsername"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      app:hint="@string/username"
+      />
+
+  <com.arx.android.salesapp.views.MaterialEditText
+      android:id="@+id/loginInpPassword"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      app:hint="@string/password"
+      android:inputType="textPassword"
+      />
+
+  <Button
+      android:id="@+id/loginBtnSubmit"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/view_padding_big"
+      android:background="?colorPrimary"
+      android:text="@string/login"
+      android:textColor="@color/white"
+      />
+
+</LinearLayout>

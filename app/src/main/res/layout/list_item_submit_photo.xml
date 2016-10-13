@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingRight="@dimen/view_padding_half"
+    >
+
+  <ImageView
+      android:id="@+id/imgContent"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      tools:src="@mipmap/ic_launcher"
+      />
+
+  <ImageButton
+      android:id="@+id/btnClose"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="right|end"
+      android:background="#8000"
+      android:padding="@dimen/view_padding"
+      android:src="@drawable/places_ic_clear"
+      android:tint="@color/white"
+      />
+
+</FrameLayout>

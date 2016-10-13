@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="?actionBarSize"
+      android:background="@color/white"
+      android:fillViewport="true"
+      >
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+      <HorizontalScrollView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="@dimen/view_padding"
+          android:paddingLeft="@dimen/view_padding_horizontal"
+          android:paddingRight="@dimen/view_padding_horizontal"
+          >
+
+        <LinearLayout
+            android:id="@+id/imgContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+          <ImageView
+              android:id="@+id/btnAddPhoto"
+              android:layout_width="80dp"
+              android:layout_height="80dp"
+              android:background="?selectableItemBackground"
+              android:padding="@dimen/view_padding_horizontal"
+              android:src="@drawable/ic_add_a_photo"
+              android:tint="?colorAccent"
+              />
+
+        </LinearLayout>
+
+      </HorizontalScrollView>
+
+      <TextView
+          android:text="Place Info"
+          style="@style/SectionLabel"
+          />
+
+      <com.arx.android.salesapp.views.MaterialEditText
+          android:id="@+id/submitInpPlaceName"
+          app:hint="Nama Toko"
+          style="@style/FormEditText"
+          />
+
+      <com.arx.android.salesapp.views.MaterialEditText
+          android:id="@+id/submitInpPlaceAddress"
+          app:hint="Alamat Toko"
+          style="@style/FormEditText"
+          />
+
+      <com.arx.android.salesapp.views.MaterialEditText
+          android:id="@+id/submitInpKecamatan"
+          app:hint="Kecamatan"
+          style="@style/FormEditText"
+          />
+
+      <com.arx.android.salesapp.views.MaterialEditText
+          android:id="@+id/submitInpKelurahan"
+          app:hint="Kelurahan"
+          style="@style/FormEditText"
+          />
+
+      <com.arx.android.salesapp.views.MaterialEditText
+          android:id="@+id/submitInpPostalCode"
+          app:hint="Kode Pos"
+          style="@style/FormEditText"
+          />
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_margin="@dimen/view_padding_horizontal"
+          android:text="Contact Person"
+          android:textAllCaps="true"
+          android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+          android:textColor="?colorPrimary"
+          android:textStyle="bold"
+          />
+
+      <com.arx.android.salesapp.views.MaterialEditText
+          android:id="@+id/submitInpOwnerName"
+          app:hint="Nama Pemilik Toko"
+          style="@style/FormEditText"
+          />
+
+
+      <com.arx.android.salesapp.views.MaterialEditText
+          android:id="@+id/submitInpNoTelp"
+          app:hint="No Telp"
+          style="@style/FormEditText"
+          />
+
+      <com.arx.android.salesapp.views.MaterialEditText
+          android:id="@+id/submitInpEmail"
+          app:hint="Email"
+          style="@style/FormEditText"
+          />
+
+      <Button
+          android:id="@+id/btnSubmit"
+          android:layout_width="match_parent"
+          android:layout_height="?actionBarSize"
+          android:layout_marginTop="@dimen/view_padding_big"
+          android:background="?colorPrimary"
+          android:text="@string/submit"
+          android:textColor="@color/white"
+          />
+
+    </LinearLayout>
+  </ScrollView>
+
+  <include layout="@layout/toolbar"/>
+
+</FrameLayout>

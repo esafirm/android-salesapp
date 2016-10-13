@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+  <ImageView
+      android:id="@+id/placeDetailImgContent"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="?colorPrimary"
+      android:minHeight="240dp"
+      />
+
+  <TextView
+      android:text="Place Info"
+      style="@style/SectionLabel"
+      />
+
+  <TextView
+      android:id="@+id/placeDetailTxtPlaceName"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      tools:text="Nama Toko"
+      style="@style/FormTextView"
+      />
+
+  <TextView
+      android:id="@+id/placeDetailTxtPlaceAddress"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      tools:text="Alamat Toko"
+      style="@style/FormTextView"
+      />
+
+  <TextView
+      android:id="@+id/placeDetailTxtKecamatan"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      tools:text="Kecamatan"
+      style="@style/FormTextView"
+      />
+
+
+  <TextView
+      android:id="@+id/placeDetailtxtKelurahan"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      tools:text="kelurahan"
+      style="@style/FormTextView"
+      />
+
+
+  <TextView
+      android:id="@+id/placeDetailTxtPostalCode"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      tools:text="Kode Pos"
+      style="@style/FormTextView"
+      />
+
+  <TextView
+      android:text="Contact Person"
+      style="@style/SectionLabel"
+      />
+
+  <TextView
+      android:id="@+id/placeDetailTxtOwnerName"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      tools:text="Nama Pemilik"
+      style="@style/FormTextView"
+      />
+
+  <TextView
+      android:id="@+id/placeDetailTxtNoTelp"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      tools:text="No Telp"
+      style="@style/FormTextView"
+      />
+
+  <TextView
+      android:id="@+id/placeDetailTxtEmail"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      tools:text="Email"
+      style="@style/FormTextView"
+      />
+
+</LinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="?selectableItemBackground"
+    >
+
+  <ImageView
+      android:id="@+id/imgContent"
+      android:layout_width="?actionBarSize"
+      android:layout_height="?actionBarSize"
+      android:background="?colorPrimary"
+      />
+
+  <TextView
+      android:id="@+id/txtName"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="@dimen/view_padding"
+      android:layout_marginTop="@dimen/view_padding_half"
+      android:layout_toRightOf="@+id/imgContent"
+      android:maxLines="1"
+      android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+      tools:text="Nama"
+      />
+
+  <TextView
+      android:id="@+id/txtAddress"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignLeft="@+id/txtName"
+      android:layout_below="@+id/txtName"
+      android:layout_marginTop="@dimen/view_padding_half"
+      android:ellipsize="end"
+      android:maxLines="1"
+      tools:text="Address"
+      />
+
+  <View
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:layout_below="@+id/imgContent"
+      android:layout_marginTop="@dimen/view_padding_half"
+      android:layout_marginLeft="@dimen/view_padding"
+      android:layout_toRightOf="@+id/imgContent"
+      android:background="#ccc"
+      />
+
+</RelativeLayout>
